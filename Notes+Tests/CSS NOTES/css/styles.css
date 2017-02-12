@@ -1,0 +1,135 @@
+
+/*ALL PAGES STYLING*/
+img {
+  margin: 1em;
+}
+
+body {
+  border: 3px solid red;
+}
+
+div.container{
+  border: 3px solid blue;
+  /*background-color: yellow;*/
+}
+
+div.my-menu {
+  /*border: 3px solid gray;*/
+  font-weight: bold;
+}
+
+.my-unselected {
+  opacity: .5;
+  filter: alpha(opactity=30);
+}
+
+div.header, div.footer {
+  border: 3px solid green;
+  background-color: grey;
+  width: 100%;
+  text-align: center;
+  clear: both;
+}
+
+div.content{
+  /*background-color: #4286f4*/
+}
+
+/*INDEX STYLING*/
+
+div.my-box-model {
+  border: 3px solid purple;
+  background-color: grey;
+}
+
+div.my-box-model p{
+  border: 3px solid red;
+  margin: 2em;
+  padding: 2em;
+  background-color: aquamarine;
+}
+
+div.index-main {
+  border: 3px solid green;
+  color: green;
+  background-color: #eee;
+  min-height: 100%;
+}
+
+img.index-my-float-left {
+  border: 3px dotted blue;
+  float: left;
+  width: 30%;
+}
+
+img.index-my-float-right {
+  border: 3px dashed red;
+  float: right;
+  width: 30%;
+}
+
+/*div.index-column-left {
+  border: 3px solid black;
+  width: 300px;
+  float: left;
+}*/
+div.col-md-4 {
+  border: 3px solid purple;
+}
+
+img.index-my-float-left-large {
+  border: 3px solid yellow;
+  width: 75%;
+  margin-left: 0em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+
+/*TESTING CASCADING*/
+div.my-cascade {
+  background-color: #a8c2ed;
+}
+div.my-cascade p {
+  background-color: #c5eda8;
+}
+div.my-cascade p a {
+  font-weight: bold;
+  color: red;
+}
+div.my-cascade li {
+background-color: green;
+}
+div.my-cascade li a {
+  background-color: purple;
+}
+
+
+/*MEDIA QUERIES PAGE*/
+
+
+/*BOOTSTRAP PAGE*/
+
+/*MIN-WIDTH, CONTENTS ACTIVED WHEN THE SCREEN IS AT LEAST 768PX OR MORE WIDE*/
+@media screen and (min-width: 768px) {
+  .column {
+    width: 30%;
+    float: left;
+    padding: 20px;
+  }
+}
+
+/*MAX-WIDTH AND MIN-WIDTH--WILL ONLY ACTIVATE WHEN SCREEN IS AT LEAST 600PX AND LESS THAN 768PX*/
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  body {
+    background-color: gray;
+    color: white;
+  }
+}
+
+/*MAX-WIDTH WILL ONLY ACTIVATE WHEN SCREEN IS SMALLER THAN 480PX*/
+@media screen and (max-width: 480px) {
+  body {
+    background-color: teal;
+  }
+}

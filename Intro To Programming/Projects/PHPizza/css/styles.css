@@ -1,0 +1,27 @@
+.jumbotron{
+  font-family: Fredericka the Great;
+  text-align: center;
+}
+
+
+body {
+  list-style: none;
+  font-family: Averia Serif Libre;
+  text-align: center;
+}
+
+/*#pizzaDetailsDiv{
+  display: none;
+}*/
+
+/*#showForm, #checkoutButton, #customerDetailsForm, #customerOrder{
+  display: none;
+}*/
+
+
+.btn-xl{
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  width:100%;
+}

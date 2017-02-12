@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>BOOTSTRAP</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Bootstrap Testing</h1>
+    </div>
+
+    <div class="container">
+      <div class="my-menu">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="my-unselected"><a href="index.html">Floats, BOX MODEL, Cascading</a></li>
+          <li class="my-unselected" role="presentation"><a href="my-media-queries.html">Media Queries and Responsive Design</a></li>
+          <li class="active" role="presentation"><a href="my-bootstrap.html">Bootstrap</a></li>
+        </ul>
+      </div><!--end of my-menu div-->
+      <div class="content">
+        <p>the .min files in bootstrap are in machine language, and since we aren't editing bootstrap files directly, we can use these "min" files instead of their easier-to-read versions.</p>
+        <p>remember to include our custom stylesheet AFTER bootstrap, so we can edit bootstrap's files and make sure ours overwrites the bootstrap's files.</p>
+        <p>a CDN is a content devlivery network, and it allows us to use the bootstrap stylesheets which are hosted online instead of placing the files direclty in our projects. if we use a CDN, however, we cannot view our page styles off of the internet. we will need a wifi connection.</p>
+        <p>Container and jumbotron are bootstrap elements</p>
+        <p>'blockquote' followed by 'footer' is a boostrap element that allows us to put in a paragraph in quote-styling. Ex:</p>
+        <blockquote>
+          <p>"This is an awesome blockquote!"</p>
+          <footer>Abraham Lincoln</footer>
+        </blockquote>
+
+        <h3>helper classes</h3>
+        <p>we can use helper classes like "bg-success" which means background-color is "success"(ie. green). so if we do p class="bg-success" it will highlight that paragraph in green.</p>
+        <p class="bg-success">ex: here's an example.</p>
+        <div class="well">
+          <h2>example of a well</h2>
+          <p>adding class="well" to an element makes it all sunk in.</p>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Panel Title</h2>
+          </div>
+          <div class="panel-body">
+            <h2>Panels</h2>
+            <ul>
+              <li>A panel class gives a section for a title and a body</li>
+              <li>Our main panel has two classes: panel and panel-default.</li>
+              <li>The second class, panel-default is a helper class describing its colors. We could change panel-default to panel-success, -info, -warning, -danger to give us different colors.</li>
+            </ul>
+          </div> <!--end panel body div-->
+        </div><!--end panel div-->
+
+        <h2>Grid System in bootstrap</h2>
+        <p>Lining up content evenly can be helped using bootstrap's grid system. it creates invisible grids to line things up. It contains two parts: rows and columns, which are both just div tags</p>
+
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li>ROW must be inside a container.</li>
+              <li>additionally, all columns MUST reside in a row. and each row may contain up to 12 columns. </li>
+              <li>Columns can include just about any HTML, not just text. So we can put panels, wells, headers, etc. inside them.</li>
+              <li>col-mediaquerysize-width</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>their class always begins with "col"</li>
+              <li>Columns are more customizable than rows. Their class has two additional pieces of information which denote what media queries can be applied to it, and how many units its width should be.</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>the format is: col media-query width</li>
+              <li>the media query portion can be either xs, sm, md, or lg sizes</li>
+              <li>the width part can be any number from 1-12. REMEMBER: a row can be ONLY 12 units wide, so a row can fit 12 columns of width 1, or 2 columns of width 6, or 3 columns of width 4.</li>
+            </ul>
+          </div><!--end of column div-->
+        </div><!--end of row div-->
+
+              <div class="row">
+                <div class="col-md-4">
+                  <p><em>Note: shortcut to move line (unselected) up or down--ctrl+arrow. <br> Ctrl + shift + d--duplicate current line</em><br></p>
+                  <p>Column class names use the following media queries:</p>
+                  <ul>
+                    <li>Phones: xs</li>
+                    <li>Tablets: sm </li>
+                    <li>Desktops: md</li>
+                    <li>Large Desktops: lg</li>
+                  </ul>
+                  <p>these prefixes denote how narrow a viewport may become before the colums stack upon one another--ie, how wide their breakpoint is.</p>
+                </div>
+                <div class="col-md-4">
+                  <p>The two most used categories of Bootstrap documentation that we'll reference are <b>Components</b> and <b>CSS</b>, both of which we can find in the navigation bar on the bootstrap website.</p>
+                  <p>The CSS section includes entries for all the resources we can used to change the apperance or implement bootstrap's version of standard html elements like <strong>headings, tables, forms, grids, buttons, images, etc.</strong></p>
+                  <p>The COMPONENETS section has the elements bootstrap created on their own, like <strong>navigation bars, labels, jumbotrons, quick ways to alter the apperance of images, etc.</strong></p>
+                </div>
+                <div class="col-md-4">
+                  <p>Any of these Bootstrap elements that have visual effects or animations require javascript (dropdown menus, modal windows, etc.)</p>
+                  <ul>
+                    <li></li>
+                  </ul>
+                </div><!--end of column div-->
+              </div><!--end of row div-->
+
+
+      </div> <!--end of content div-->
+    </div> <!--end of container div-->
+    <div class="footer">
+      <p>FOOTER CONTENT</p>
+    </div>
+  </body>
+</html>

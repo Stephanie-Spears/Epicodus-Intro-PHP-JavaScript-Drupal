@@ -1,0 +1,3 @@
+push this commit to github
+do a readme file for each project
+update the html sections that are out of date, like how i set up a shortcut in sublime to run the file in chrome--but not in atom. also the google hyperlink is empty. and spacing and indentation is all off--did udacity say putting spaces before and after <> was ok..? check

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<title>Notes About HTML</title>
+</head>
+
+<b>"b" is for bold <br> </b>
+<em>"em" is for italics <br> </em>
+"br" is for linebreak, and is a void tag because it doesn't need a closing tag (because it has no content)  <br><br>
+
+
+<b> TAGS: <br>
+</b>the syntax for a tag is:
+<br> &#60 tag attribute = "value" &#62 contents &#60 /tag &#62 <br>
+<br> you have to use ASCII to display certain keyword values, like the greater than/less than signs.
+<em><br>Tags can have multiple attributes</em> <br>
+<b>an example of a tag that uses an attribute is the 'anchor' tag, which is the &#60 a &#62 tag </b>
+<br> <br> a full example looks like this:
+<br> &#60 a href = "www.google.com" &#62  this would be a hyperlink to google &#60 /a &#62
+<br> <br>
+
+<a href = "http://www.google.com" > google hyperlink </a>
+<br> <h1>You have to add the http part in the link, or else it will look in the local folder for a file named www.google.com</h1> <br>
+<b>IMAGES: <br></b>
+&#60 img src = "url" alternate = "text" &#62
+<br>
+in this case, the tag img is for images and src is for source. You link the source of the image in the url section. <br> The alt section is set up as a backup, so that whatever text you choose will show up if the image doesn't load. Like if the URL you link doesn't exist. <br> Images also don't have any contents, so they don't need a closing tag. This is called a void tag. <br> <br>
+<em>Test Image: <br> </em>
+<img src = "http://img.scoop.it/BrPvS7tt4jph0ZgSlxinOzl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9">
+<br> <br>
+
+
+"&#60 p &#62 paragrah contents &#60 /p &#62" needs an end tag, but it stands for paragraph, and sets up the contents into it's own section.
+<br>
+
+<p>
+	This is a paragraph example. It's all one long line, but it seprates it from the other content sentences.
+</p>
+
+<em> The "br" tag is an "inline" element (as is "b", "em", "img"), amd it ends a line. <br> The "p" tag actually makes a "box," around the contents </em>
+
+<p>
+	Two more elements are "span" and "div". They both are normal elements, and they can both have content. The only difference between the two is that "span" is inline, and "div" is block. They just display their contents. <br> <br>
+	&#60 span &#62 content &#60 /span &#62 (inline) <br>
+
+	&#60 div &#62 content &#60 /div &#62 (block) <br> <br>
+
+	You can add an attribute called "class," and the following example is a CSS class, which is a different language used to add styles to your documents. <br>
+	&#60 span class = "foo" &#62 content &#60 /span &#62 <br>
+	&#60 div class = "bar" &#62 content &#60 /div &#62 <br> <br>
+	<b> EXAMPLE: <br> </b>
+	<span> This span is inline. </span>
+	<div>
+		This div is a block.
+	</div>
+</p>
+
+<p>
+	<strong> This is a strong tag <br> </strong>
+	<br>
+	Note: Browsers display &#60 strong &#62 as &#60 b &#62, and &#60em&#62 as &#60i&#62. However, there is a difference in the meaning of these tags: &#60b&#62  and &#60i &#62 defines bold and italic text, but &#60strong&#62 and &#60em&#62 means that the text is "important".
+</p>
+
+<p> <b> html documents: </b> <br>
+	&#60 !DOCTYPE HTML &#62 <b> -document type </b><br>
+	&#60 html &#62 <b> -this is the opening html tag </b><br>
+	&#60 head &#62 <b> -this is the head, it has metadata and references styling stuff such as CSS and Java Script files </b><br>
+	&#60 title &#62 Title! &#60 /title &#62 <b> -this is the title of the page, which appears in the top of the browser window, or in the browser tab </b> <br>
+	&#60 /head &#62 <br>
+	&#60 body &#62 <b> -this is the body tag, which is the actual contents of the document. This is the section that changes the most. </b> <br>
+	&#60 b &#62 content &#60 /b &#62 <br>
+	&#60 /body &#62 <br>
+	&#60 /html &#62 <b> -this is the closing of the html tag </b><br>
+</p>
+<strong> NOTE: I added the chrome build so that I can now use ctrl+B or F7 as hotkeys to show the project in the chrome browser. </strong>
+<strong>Another NOTE: While in Epicodus, we're using atom. So I also set up a keybinding for ctrl+alt+o that opens the document in chrome. </strong>
+<br> <br>
+
+<p>
+	<b> URL: Uniform Resource Locator </b> <br>
+	http://www.udacity.com/cs254x/hipmunk.png <br>
+	http (protocol) :// www.udacity.com (host name or domain name of the server that has the document we want to access. Can also be an IP address, the host name just translates into an IP address--which is the description of the location of the physical machine) /cs254x/hipmunk.png (path of the document we want to fetch) <br>
+	the path can also be as short as just "www.udacity.com<b>/</b>"
+
+
+	&#60 &#62
+	&#60 &#62
+	&#60 &#62 &#60 &#62
+	&#60 &#62 &#60 &#62
+	&#60 &#62
+	&#60 &#62
+
+</p>
+<p>
+	<b> uRL: NEW </b> <br>
+</p>
+<p>
+	<b>
+		Note: I downloaded the emmet package, so now sublime will autoindent without having to type the formatting. I can simply type "p[tab][enter]" and it will autoform.
+	</b>
+</p>
+
+<p>
+	Adding to our urls. <br>
+	Query Parameters (also called GET parameters) <br>
+	Ex: <br>
+	http://example.come/foo?p=1 <br>
+	This adds an extra parameter, whose name is "p" and whose value is 1. Value can be anything. <br>
+	We can add more parameters to the URL. <br>
+	The first parameter is separated by a question mark, but all of the following parameters are separated by "&" <br>
+	http://example.com/foo?P=1&q=neat. <br>
+	They're separate from teh path, but they're part of the whole URL when the server is making a request.
+</p>
+<p>
+	<b>
+		URL FRAGMENTS <br>
+	</b>
+	A fragment is separated from the rest of the url by a hash sign "#". <br>
+	Fragments are usually used to refer to a specific part of the page you're on. This part is not sent to the server when you make a request, it is only in the browser. <br>
+	When there are query parameters, the fragment comes last.
+</p>
+<p>
+	<b>
+		URL PORTS <br>
+	</b>
+	http://localhost:8000/ <br>
+	the address of the machine is shown in the localhost section. <br>
+	the :800 in this is the port, which by default is usually 80. <br>
+	if you want to use a different port, you need to add it specifically, between the host and the path--ex: port 8000 (as opposed to the 80) <br>
+</p>
+<p>
+	<b>
+		HTTP: HYPERTEXT TRANSFER PROTOCOL <br>
+		REQUEST LINES <br>
+	</b>
+	Example Url: <br>
+	http://example.com/foo/logo.png?p=1#tricky <br>
+	The REQUEST LINE for this url is: <br>
+	GET/foo/logo.png?p=1 HTTP/1.1 <br>
+	"GET" is the method we're using, "HTTP/1.1" is the version we're using, "/foo/logo.png?p=1" is the path that we're using, "#tricky" isn't included in the path because it's never sent to the server--it's for the browser only.
+	<br>
+	The most common method are GET and POST. POST sends data TO the server, and GET recieves data from the server. <br>
+</p>
+
+<p>
+	<b> HTTP REQUEST: <br>
+	</b>
+	GET/foo?p=1 HTTP/1.1 (request line) <br>
+	the request line is followed by a number of headers <br>
+	headers have this format: "name: value" <br>
+	Ex: <br>
+	Host: www.example.com <br>
+	user-Agent: chrome <br>
+	Host is from the url. One server can host several websites, which is why it lists the website it's requesting the document for. <br>
+	User-Agent basically describes who is making the request. It's usually your browser. It's helpful for the server because then they know what type of machine is making the request. <br>
+</p>
+<p>
+	<b> user agent headers... <br>
+	</b>
+	an example is like "googlebot," which indexes sites for the search engine. The server gets pummled by requests from the bot, which slows down the server altogether. But because the server can see the user agent, it can recognize that it's "googlebot," and it can slow down requests from that specific user, allowing all the other users to continue requesting documents from the server at regular speeds. Malicious user agents will try to pretend that they're a browser but their IP addresses won't match (or something?) and the server can recognize this, and block them altogether. When people are developing software, it's supposed to be "polite" to include a user-agent so that servers can recognize them as non-malicious, or allow the server to monitor the software's requests...? <br>
+</p>
+
+<p>
+	<b>
+		HTTP RESPONSES: <br>
+	</b>
+	Your browser requests a document from the server. The server responds. <br>
+	Request: GET/foo HTTP/1.1 <br>
+	"HTTP/1.1" is the request line <br>
+	Response: HTTP/1.1 200 OK <br>
+	"HTTP/1.1" is the status line, "200" is the status code, "OK" is the reason phrase <br>
+	<b>
+		Status Codes: <br>
+		200 ok (most common) <br>
+		302 Found (document is located somewhere else) <br>
+		404 Not found (document wasn't found) <br>
+		500 Server Error (server broke trying to handle the request)<br>
+	</b>
+</p>
+<p>
+	the status line is followed by headers, just like the request line. Examples: <br>
+	Date: Tue Mar 2012 04:33:33 GMT <br>
+	Server: Apache/2.2.3
+	<b>
+		DONT INCLUDE THIS, OR MAKE IT UP, OTHERWISE YOU'RE GIVING INFORMATION TO A WOULD-BE HACKER <br>
+	</b>
+	Content-Type: text/html; <br>
+	Content-Length: 1539 <br>
+</p>
+</html>

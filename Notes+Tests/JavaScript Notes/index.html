@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.js">
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
+    <link rel="stylesheet" href="js/my-javascript.js">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Intro to JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="header">
+          <h1>JAVASCRIPT</h1>
+        </div><!--end header div-->
+      </div><!--end jumbotron div-->
+      <div class="content">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <h3>JavaScript and jQuery</h3>
+            <p>jQuery is a JavaScript library.</p>
+            <p>The basic building blocks of JavaScript:</p>
+            <ol>
+              <li>Data types</li>
+              <li>Operators</li>
+              <li>Variables</li>
+              <li>Methods</li>
+              <li>Functions</li>
+            </ol>
+            <p>Basics of jQuery:</p>
+            <ol>
+              <li>Key concepts(ie. Callbacks and event handlers)</li>
+              <li>Show, hide, toggle HTML elements</li>
+              <li>Understand the Document Object Model (DOM) and how JavaScript changes the displayed page, not the HTML</li>
+              <li>Traverse and manipualte DOM</li>
+              <li>Create forms to gather user input</li>
+              <li>Manipulate the attributes of HTML elements</li>
+            </ol>
+          </div><!--end col 1 div-->
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <p>Advanced Javascript:</p>
+            <ul>
+              <li>Implement branching which allows JavaScript to perform different actions based on different conditions that we create</li>
+            </ul>
+          </div><!--end col2 div-->
+          <div class="col-sm-4 col-md-4 col-lg-4"
+            <p>At the end of this section, you'll have an opportunity to complete an independent project, which will be reviewed for the following objectives:</p>
+            <ol>
+              <li>All previous standards (last review's objectives) are in place</li>
+              <li>Site uses branching to return destination</li>
+              <li>jQuery is used to show and hide destination after questions are answered and submitted</li>
+              <li>Form gathers input from the user</li>
+              <li>Variable names are descriptive of what they represent</li>
+              <li>Web page is styled using Bootstrap and custom CSS</li>
+              <li>You are able to discuss the flow of your code and the concepts behind it with an instructor using correct terminology.</li>
+            </ol>
+          </div><!--end col3 div-->
+        </div><!--end row div-->
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <h3>Aritmetic</h3>
+            <ul>
+              <li>Web browsers can only do three things: display HTML content, style it with CSS, and change what'd displayed with JavaScript</li>
+              <li>ctrl+shift+j on a webpage will direct you to the JavaScript developer tools</li>
+              <li>JavaScript can perform basic aritmetic(add multipy, modulo, PEMDAS, etc.)</li>
+              <li>You can use +=, -=, *=, /=</li>
+            </ul>
+            <h3>Variable Naming</h3>
+            <ul>
+              <li>Variables should begin with a letter.</li>
+              <li>Variables are case sensitive</li>
+              <li>use clear names that describe the value being stored</li>
+              <li>"var myNumber = 45;" sets myNumber to 45.</li>
+              <li>myNum type naming is called lower camel case--because the caps look like humps</li>
+              <li>you should always use var myNum when declaring a variable to avoid bugs</li>
+              <li>increment and decrement by one: myNum += 1 or -= 1</li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <h3>STRINGS</h3>
+            <li>var myString="hello world";</li>
+            <li>if you want to put a quote inside a string you can do forward slash on either side of it, or use an "escape" which is two forward slashes. You can also use single quotes</li>
+            <h3>METHODS</h3>
+            <ul>
+              <li>".toExponential()", "toFixed(2)" are called  methods. Those in particular switch between fixed notation and exponential. Also toPrecision(4)</li>
+              <li>.toUpperCase();</li>
+              <li>var word="foo" ... word.concat("bar"); ... "foobar"</li>
+              <li>You can chain methods-- "foo".concat("bar").toUpperCase(); "FOOBAR"</li>
+              <li>instead of concat, you can just use "string1" + "string2";</li>
+              <li>STRINGS IN JAVASCRIPT are c-strings (array position begins at 0)</li>
+            </ul>
+          </div><!--end col div-->
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <h3>Comparision Operators</h3>
+            <ul>
+              <li>result in true or false, greater than smaller than, equal to, etc.</li>
+              <li>When asking if something is equal to something else, we use THREE equals signs ===</li>
+              <li>common comparision operators: ===, !==, >, <, <=, >=</li>
+            </ul>
+            <h3>Five basic data types:</h3>
+            <ul>
+              <li>numbers</li>
+              <li>strings</li>
+              <li>booleans</li>
+              <li>undefined: when declaring a variable without giving it a value, it's undefined</li>
+              <li>null</li>
+            </ul>
+            <h3>Functions</h3>
+            <ul>
+              <li>parseInt(): converts a string to a number</li>
+              <li>toString(): converts a number to a string</li>
+              <li>alert("") opens a dialog box and returns undefined</li>
+              <li>confirm() opens a dialog box and returns boolean--so can ask yes or no question</li>
+              <li>prompt("") opens a dialog box and returns a string</li>
+              <li>ALL values returned from a prompt are saved as strings, to collect a num, we need to run the .parseInt or .parseFloat function on it</li>
+              <li>an ARGUMENT is what you pass into a function or method, a PARAMETER is a variable that's assignmed to the argument. Below, number1 and number2 are PARAMETERS, and 1 and 2 are ARGUMENTS</li>
+              <li>ex: var add = function(number1, number2) {return number1+number2;};    add(1, 2);</li>
+            </ul>
+            <p>we can promt the user for input and set a variable from it....userName = prompt("type name:");</p>
+          </div><!--end col div-->
+        </div><!--end row div-->
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <h3>FUNCTION BELOW RETURNS "the sum is 8"</h3>
+            <p>var saySomething = function(whatToSay) {alert(whatToSay);};<br>
+            var add = function(number1, number2) {return number+ number2;};<br>
+            saySomething("The sum is " + add(3,5) + ".");</p>
+            <p>var firstName = prompt("Name:"); alert(firstName);<br>
+              var lastName = prompt ("Last name:");<br>
+              alert(lastName);<br>
+              var fullName = function(firstName, lastName) {<br>
+                alert(firstName + " " + lastName);}<br>
+              fullName(firstName, lastName);</p>
+          </div><!--end col div-->
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <p>you can open the console of a website (insect) and then run JavaScript commands on specific elements to change what they do</p>
+            <p>ex: selecting header and appending contents to the end of the text like so:</p>
+            <p>$(".header").append(["new header"]);</p>
+
+          </div>
+        </div><!--end row div-->
+      </div><!--end content div-->
+
+    </div><!--end container div-->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted"><em>Copyright 2017 by Stephanie Spears</em><br><a href="mailto:stephanie.spears1@gmail.com">Stephanie's Email</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

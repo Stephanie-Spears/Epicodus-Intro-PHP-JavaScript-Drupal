@@ -1,0 +1,26 @@
+There are a few ways of solving this problem. Here's the code I wrote. Let's break it down.
+
+function incrementLastArrayElement(_array)  {
+    var newArray = [];
+    newArray = _array.slice(0);
+    var lastNumber = newArray.pop();
+    newArray.push(lastNumber + 1);
+    return newArray;
+}
+newArray = _array.slice(0);
+Just like string.slice(begin, [end]) separates the characters of a string, array.slice(begin, [end]) separates the elements of an array from the index of the begin up to but not including end. We want to make a copy of the original array, so we won't include an [end]. At this point, newArray is a copy of the original _array.
+
+var lastNumber = newArray.pop();
+The array.pop() method conveniently gives us (or returns) the last element of the array, which in this case is the number we want to increase by 1. However! Be careful because array.pop() actually removes the last element of the array. This is why we made a copy in the previous line, so we wouldn't modify the original _array.
+
+newArray.push(lastNumber + 1);
+Just how the jQuery .append() method adds an element to the end of an HTML block, the array.push() method adds an element to the end of an array. Here, we're .push()ing the lastNumber + 1, which is exactly what we wanted to do.
+
+Terminology
+An argument is what you pass into a function or method; a parameter is a variable that's assigned to the argument. Above, number1 and number2 are parameters, and 1 and 2 are arguments.
+
+Sample code
+This function takes 2 arguments (expecting two numbers) and assigns them to the parameters number1 and number2. The function returns a number:
+
+var add = function(number1, number2) { return number1 + number2; };
+add(1, 2);

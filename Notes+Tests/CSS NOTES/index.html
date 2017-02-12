@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS TEST</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Float Test</h1>
+    </div>
+
+    <div class="my-menu">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="index.html">Floats, BOX MODEL, Cascading</a></li>
+        <li class="my-unselected" role="presentation"><a href="my-media-queries.html">Media Queries and Responsive Design</a></li>
+        <li class="my-unselected" role="presentation"><a href="my-bootstrap.html">Bootstrap</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="index-main">
+        <div class="clearfix">
+          <img class="index-my-float-left" src="img/profile-pic.jpg" alt="test-pic">
+          <h2>CSS selector notes:</h2>
+          <h3>class vs id</h3>
+          <ul>
+            <li> p class="intro" can be accessed using .intro </li>
+            <li> p id="line2" can be accessed using #line2 </li>
+            <li>id's are unique while classes are not. We can use the same class on multiple elements, while id's must be unique to a single element on the same page</li>
+          </ul>
+          <h3>descendants</h3>
+          <ul>
+            <li>.neato selects all elements with the class="neato"</li>
+            <li>ul.important selects all ul elements that have a class="important"</li>
+            <li>A,B selects all A and B elements. You can combine any selectors this way, and you can specify more than two. Ex: p, .fun selects all the p elements as well as all elements with the class="fun"</li>
+            <li>You can select all elements with the universal selector * (ex: p * selects any element inside all p elements)</li>
+            <li>A * selects all elements inside of A (ex: ul.fancy * selects every element inside all ul class="fancy" elements)</li>
+          </ul>
+          <img class="index-my-float-right" src="img/hunt-osaka.jpg" alt="scavenger hunt osaka">
+          <ul>
+            <li>A + B selects all B elements that direclty follow A. Elements that follow one another are called <strong>siblings</strong>. They're on the same depth level. (ex: p + .intro selects every element with class="intro" that directly follows a p)</li>
+            <li>General Sibling Selector: select elementsthat follows another element. A ~ B selects all B that follows an A</li>
+            <li>Child Selector. Select children of an element. A>B selects all B that are direct children of A</li>
+            <li>First child pseudo-selector. Select a first child element inside of another element. :first-child selects all first child elements. (ex: p:first-child selects all first child elements of p. ex2: div p:first-child selects all first child p elements that are inside a div)</li>
+            <li>Only-child pseudo-selector: select an element that are the only child element inside of another one :only-child. (ex: span:only-child selects the span elements that are the only child of some other element. ex2: ul li:only-child selects only the li element that are in a ul)</li>
+            <li>:last-child</li>
+            <li>:nth-child(A), selects the nth(ex: 1st, 2nd, 8th) child element in another element (ex: div p:nth-child(2) selects the second p in every div)</li>
+            <li>:nth-last-child(A)</li>
+            <li>:first-of-type</li>
+            <li>:nth-of-type(A)</li>
+            <li>:nth-of-type(An+B). (ex: span:nth-of-type(6n+2) selects every 6th instance of a span, starting from *and including* the second instance)</li>
+            <li>:only-of-type</li>
+            <li>:last-of-type</li>
+            <li>:empty selects elemnts that don't have children</li>
+            <li>:not(x) selects all elements that don't match teh negation selector. (ex: div:not(:first-child) selects every div that is not a first child)</li>
+            <li>[attribute] select all elements taht have a specific attribute. (ex: a[href] selects all a elements that have a href="anything" attribute)</li>
+            <li>[attribute="value"] select all elements that have a specific attribute value</li>
+            <li>[attribute^="value"] select all elements with an attribute value that starts with specific characters. (ex: .toy[category^="Swim"] selects elements with class toy and either category="swimwear" or category="swimming")</li>
+            <li>[attribute$="value"] select all elements with attribute value that ends with specific characters</li>
+            <li>[attribute*="value"] select all elements with an attribute value that contains specific characters anywhere</li>
+          </ul>
+        </div> <!--end of clearfix div-->
+      </div> <!--end of index-main div-->
+
+      <div class="clearfix">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- <div class="index-column-left"> -->
+              <img class="index-my-float-left-large" src="img/nara-deer.jpg" alt="silly deer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-4">
+            <!-- <div class="index-column-left"> -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-4">
+            <!-- <div class="index-column-left"> -->
+              <p><img class="index-my-float-left" src="img/nara-deer.jpg" alt="silly deer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="my-box-model">
+        <p>margin is outermost</p>
+        <p>border lines the content</p>
+        <p>padding is inside the border</p>
+        <p>content is...the content</p>
+      </div>
+
+      <div class="my-cascade">
+        <h2>CASCADING</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Here's an example of using nested selectors, like .my-class p a {font-weight: bold, color: red} or something. <a href="#">THIS IS AN A-TAG NESTED IN A P TAG</a></p>
+        <ul>
+          <li>LIST OF STUFF <a href="#">THIS IS AN A TAG NESTED IN A LIST</a></li>
+          <li>LIST OF STUFF</li>
+          <li>LIST OF STUFF</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <p>NOTES:
+        <ul>
+        <li> p class="intro"  can be accessed using .intro </li>
+        <li> p id="line2" can be accessed using #line2 </li>
+        <li>id's are unique while classes are not. We can use the same class on multiple elements, while id's must be unique to a single element on the same page</li>
+        </ul>
+      </p>
+
+    </div> <!--end of container div-->
+
+
+    <div class="footer">
+      <p>FOOTER CONTENT GOES HERE</p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+BLock Elements: elements that create a "block" in the display by appearing on their own line
+TAGS: annotations which indicate how the text should be formatted
+P tag: indicates text should be formatted in a paragraph
+INLINE ELEMENTS: elements that share a line with other elements, ex: <strong>, <em>, <a> (creates a link), <img>
+ATTRIBUTE: additional info provided to a tag.ex: an href attribute in an <a> tag provides the URL a link should use
+SELF-CLOSING TAGS: ex: <img>
+CSS=CASCADING STYLE SHEETS
+
+RULE: a block of CSS that details particular stylistic instructions to be applied to an element
+SELECTOR: a part of the CSS rule taht determines which html element the rule applies to
+PROPERTY: the characteristic a CSS rule is altering
+VALUE: the attribute a CSS rule is applying to a specified property
+
+BOX MODEL: padding, margin, border
+
+this makes the whole background of the selected div red:
+div.my-cascade {
+background-color: red;
+}
+
+this makes only the p elements inside of the div blue:
+div.my-cascade p {
+background-color: blue;
+}
+
+this only selects the "ul" elements inside of the "p" elements:
+
+div.my-cascade p ul {
+font-weight: bold;
+color: yellow;
+}
+
+IF TWO RULES CONFLICT, THE MOST SPECIFIC RULE WINS. 
+-so the digital one is more specific and will win.
+
+.digital p a {
+font-weight: bold;
+}
+
+a {
+font-weight: normal;
+}
+
+-above is called specificity.
+
+
+<p class="intro">  can be accessed using .intro
+<p id="line2">  can be accessed using #line2
+
+
+LIST OF ALL THE CSS PROPERTIES YOU CAN CHANGE:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
+
+
+UNICODE ALIASES:
+https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML

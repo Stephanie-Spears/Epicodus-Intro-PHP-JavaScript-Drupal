@@ -1,0 +1,108 @@
+in HOME DIRECTORY (/Users/Guest/ on Epicodus computers) create a file called .pairs
+
+pairs:
+  ss: Stephanie Spears
+  xx: Xblah Xblah
+email:
+  al: stephanie.spears1@gmail.com
+  xx: xx@gmail.com
+
+
+When working solo, we don't use a .pairs file. We do global configuation from the terminal: 
+
+$ git config --global ss "Stephanie Spears"
+$ git config --global ss stephanie.spears1@gmail.com
+
+Create a new directory (mkdir)
+
+Initialize Git and Git Pair:
+$ git init
+we can check it by looking in the hidden files for the git (ls -a) should show .git
+On Windows we can use ls -force
+
+with the git repository set up, the final step is to let Git know who is writing changes to this project (ie, pairs) so we run the git pair command *SOLO, THIS STEP IS UNNECESSARY*
+$ git pair ss xx
+
+to verify who the pair is: 
+$ git about
+
+create a file with touch hello-world.html
+open the project directory in atomwith atom .
+save the file in atom
+
+GIT TRACKING
+
+$ git status
+"untracked files:" shows what files have been modified but not tracked for changes
+ADD FILES TO TRACK
+
+git add hello-world.html
+OR for the whole directory
+git add .
+
+MAKING GIT COMMITS
+
+a commit is a way of saving changes to the permanent history of our project
+*SOLO OR ON A WINDOWS MACHINE:*
+$ git commit -m "add version notes here"
+or
+$ git-pair-commit -m "add version notes here"
+
+LOOK AT GIT HISTORY
+$git log
+
+
+ADD AND COMMIT CHANGES
+$ git add hello-world.html
+$ git-pair-commit -m "add a commit message"
+
+
+
+
+
+ADDING A GITHUB REPOSITORY
+
+
+log into github, select "new reposity" or "new" button, create a repo name
+
+PUSHING TO GITHUB
+in the project directory, make sure the code is working. also make sure there aren't any changes we need to commit.
+$ git status
+NOW we tell git where our remote repo is by providing the web address. 
+$ git remote add ss https://github.com/epicodus-lessons/hello-world
+TO SEE IF IT HAS BEEN SUCCESSFUL, 
+$ git remote -v
+THIS SHOWS US all the remotes stored in Git for this project. 
+
+TO PUSH OUR CODE:
+$ git push ss master
+THIS INDICATES that we should push our code to the remote with the nickname "ss" from the "master," which is the main Git repo on our local machine. Only the owner of the remote GitHub repo can push code to it
+
+CLONING FROM GITHUB
+this is how we get our code back from github
+$ git clone https://github.com/epicodus-lessons/hello-world
+ls to make sure the directory has been cloned to our local machine
+IF WE RUN: $ git remote -v we will see that our newly created local .git repo is automatically linked with the nickname "origin" - to the remote repo from which we cloned. 
+NOTE: ONLY ONE LOCATION CAN BE CALLED 'ORIGIN,' SO if we clone one project but want to push it to two different repos, they cannot both be named "origin," which is a reason to use the initals as a nickname in the remote repo.
+NOTE: do NOT clone a project inside an exisiting local project repo, because it will end up with one git repo inside of another. so DON'T RUN GIT CLONE WHEN INSIDE A PROJ DIRECTORY
+
+
+ANCHOR TAG CREATES A LINK AND THE HREF ATTRIBUTE PROVIDES TEH WEB ADDRESS IT WILL GO TO
+<p> check out <a href="http://www.epicodus.com/">Epicodus</a></p>
+*IF YOU OMIT THE HTTP:// the web browser will look for a file called "www.epicodus.com" in oyur current directory. 
+
+IMAGES
+save images in a directory called img (or whatever you want). Include it like this:
+<img src="img/kitten.jpeg" alt="a picture of a cat."> 
+this tells the browser to look in the current directory in a folder called img
+
+
+
+
+CHECK OUT CSS ZEN GARDEN FOR COOL CSS DESIGN IDEAS/CODE
+
+to link a css style sheet to the html *make a folder called css in the project directory, in the html in the HEAD section:
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+-some css commands
+color, text-align, font-style, font-weight, 

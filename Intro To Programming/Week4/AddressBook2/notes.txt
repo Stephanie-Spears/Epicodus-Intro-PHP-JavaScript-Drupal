@@ -1,0 +1,58 @@
+<div class="section well">
+  <h2>NOTES:</h2>
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6">
+      <div class="content well">
+        <p>Object: A structure for storing data that is comprised of properties and methods</p>
+        <p>Key-Value Pair: the format of an object's properties which pairs a key name to a value</p>
+        <p>A Method is a property whose value is a function(AREA below)</p>
+        <ul>
+        <li>var rectangle = {
+          length: 22;
+          width: 10;
+          area: function(){
+            return this.length * this.width;
+          } };</li>
+        </ul>
+        <p>This: 'this' is a reference to the object a method is called on</p>
+        <p>Dot notation is used to create, access, update, and manipulate JS properties</p>
+        <ul>
+          <li>dog.name
+            "Sparky"
+            dog.speak()
+            Woof!
+          </li>
+          </ul>
+        <p>Bracket Notation: alternative to dot notation</p>
+        <ul>
+          <li>dog['name']
+            "Sparky"
+            dog['speak']()
+            Woof!
+          </li>
+        </ul>
+      </div><!-- NOTE: end content well div -->
+    </div><!-- NOTE: end col1 div -->
+    <div class="col-xs-6 col-sm-6 col-md-6">
+      <div class="content well">
+        <p>"DOG OBJECT in literal notation"</p>
+        <p>var dog1 = { name: "Falcor", colors: ["black"], age: 4, };</p>
+        <p>var dog2 = { name: "Nola", colors["white", "black"], age: 6, };</p>
+        <p>to cut down on the repetion of having to write these out, we make a constructor to do it for us</p>
+        <p>with a constructor we need only to use these parts to create the same variables:
+        <ol>
+          <li>var dog1 = new Dog("Falcor", ["black"], 4);</li>
+          <li>var dog2 = new Dog("Nola", ["white", "black"], 6);</li>
+        </ol></p>
+        <p>CONSTRUCTOR: blueprint for creating many of the same type objects. Constructors add Properties</p>
+        <p>INSTANCE: objects created with a constructor are instances of the type defined by the constructor. </p>
+        <p><strong>PROTOTYPE: Prototypes store methods to be shared by ALL objects of the same type. String.prototype is shared by all String objects. Prototypes store methods that objects of that type inheret</strong></p>
+        <p>constructor function to initialize new DOG object with the passed in values</p>
+        <p>function Dog(name, colors, age){ this.name=name; this.colors = color; this.age = age;} </p>
+        <li>To create a new "dog" object we can do:</li>
+        <li>var myPuppy = new Dog("Ernie", ["brown", "black"], 3)</li>
+        <li>we can access it's name attribute with: myPuppy.name; --would output "Ernie". or myPuppy.colors</li>
+      </div><!-- NOTE: end content well 2 -->
+    </div><!-- NOTE: end col2 div -->
+  </div> <!-- NOTE: end row div -->
+</div><!-- NOTE: end section div -->

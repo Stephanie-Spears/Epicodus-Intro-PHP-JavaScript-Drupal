@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>MEDIA QUERIES AND RESPONSIVE DESIGN</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Media Queries and Responsive Design</h1>
+    </div>
+    <div class="container">
+
+      <div class="my-menu">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="my-unselected"><a href="index.html">Floats, BOX MODEL, Cascading</a></li>
+          <li class="active" role="presentation"><a href="my-media-queries.html">Media Queries and Responsive Design</a></li>
+          <li class="my-unselected" role="presentation"><a href="my-bootstrap.html">Bootstrap</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="column">
+          <h2>Responsive Web Design</h2>
+          <p>Responsive web design is when you code your site to change how it appears depending on the size of the screen it's being viewed on.</p>
+          <p>The screen being used to view the site is called the "viewport"</p>
+          <ul>
+            <li>A media query is a block of CSS that is applied only when certain conditions about teh viewport are true. Ex: a media query that defines a max-width of 500px would only be applied when the user's viewport width is below 500px</li>
+            <li>Media Queriers are inside css style sheets, and since css cascades, they should be located at the bottom of the style sheet to prevent being overridden. They being with @media media-type and (max-width: 768px) {content}</li>
+            <li>the @media tells the browser it's a media query</li>
+            <li>the parenthesis defines <em>when</em> teh css in this query should be applied to our site</li>
+            <li>the curly braces contain the css that will be applied IF/WHEN the conditions we define are TRUE</li>
+          </ul>
+          <p>Media queries often specify media type. it allows for the following options to be selected: </p>
+          <ul>
+            <li>all: refers to any and all devices (default)</li>
+            <li>print: refers to viewing our site in "print preview" mode. </li>
+            <li>screen: refers to color screens.</li>
+            <li>speech: refers to screen readers which assist people with impaired site</li>
+          </ul>
+        </div>
+          <div class="column">
+          <h3>Media Features</h3>
+          <ul>
+            <li>height: describes teh height of the viewport in pixels. This media feature can also have a min or max prefix added onto it. (ie. max-height which would define the maximum height a media-query's css should apply to)</li>
+            <li>width: describes the width of the viewport, in pixels. can also have a max-min prefix.</li>
+            <li>orientation: indicates whether the viewport is in landcape(wider than it is tall) or portrait mode(taller than it is wide)</li>
+          </ul>
+          <p>Let's use the width media feature in our media query. We'll also include the MAX prefix to specify a maximum width.</p>
+          <p>@media screen and (max-width) {content}</p>
+          <ul>
+            <li>the and between media type and the parentesis is for when we want to use both a media type and a media feature</li>
+            <li>the max prefix says that the CSS we eventually include in this media query should be applied to viewports ONLY within a max width of 768px</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Breakpoints</h3>
+          <p>a breakpoint is the point at which a media query's condition becomes TRUE. <strong>ex: our max-width of 768px will apply its styles ONLY WHEN the viewport is 768px OR LESS wide.</strong> 768px is therefore the BREAKPOINT because <strong>it's the point at which our query will be "ACTIVATED."</strong></p>
+          <ul>
+            <li>@media screen and (max-width: 768px) {body {background-color: black;    color: white;}}</li>
+            <li>So if we have a width that is bigger than 768px, it will break back to default. If it is 768px or LESS, the background color and text color will change to what's inside the body bracket. </li>
+            <li>We can define multiple media queries for different size screens</li>
+            <li>When multiple media queries apply, the most recently applied media query's CSS will override the others IF they contain the same selectors and properties.</li>
+            <li>if we don't want to worry about MULTIPLE media queries applying at ONCE, then we can apply both a min and a max value to a single query.</li>
+            <li>@media screen and (max-width: 768px) and (min-width: 600px) { body {  background-color: black;  color: white;} }</li>
+          </ul>
+          <p>WE CAN DEFINE ANY CSS IN MEDIA QUERIES</p>
+          <ul>
+            <li>Oftentimes sites will display multiple columns on large screens, then condense them into a single column on smaller screens.</li>
+            <li>We can specify that any viewport ABOVE 768px should float our text into columns. This means any viewport BELOW the size of this breakpoint will display text in a single column</li>
+            <li>@media screen and (min-width: 768px) { .column  {width: 300px;  float: left;  padding: 20px;} }</li>
+          </ul>
+        </div>
+
+
+
+      </div> <!--end content div-->
+    </div> <!--end container div-->
+    <div class="footer">
+      <p>FOOTER CONTENT</p>
+    </div>
+
+  </body>
+</html>

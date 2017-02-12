@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Fredericka+the+Great|Bungee+Shade" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" >
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>Track Selector</h1>
+      </div>
+      <div class="tracksTabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+          <li role="presentation"><a href="#PHP" aria-controls="PHP" role="tab" data-toggle="tab">PHP/Drupal</a></li>
+          <li role="presentation"><a href="#RUBY" aria-controls="RUBY" role="tab" data-toggle="tab">Ruby/Rails</a></li>
+          <li role="presentation"><a href="#JAVA" aria-controls="JAVA" role="tab" data-toggle="tab">Java/Android</a></li>
+          <li role="presentation"><a href="#CSS" aria-controls="CSS" role="tab" data-toggle="tab">CSS/Design</a></li>
+          <li role="presentation"><a href="#CSHARP" aria-controls="CSHARP" role="tab" data-toggle="tab">C#/.NET</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home"><div class="section well"><h1><button class="btn btn-xl" id="quizButton">Take a Quiz</button></h1></div></div>
+          <div role="tabpanel" class="tab-pane" id="PHP"><div class="section well"><h1>PHP/Drupal</h1></div></div>
+          <div role="tabpanel" class="tab-pane" id="RUBY"><div class="section well"><h1>Ruby/Rails</h1></div></div>
+          <div role="tabpanel" class="tab-pane" id="JAVA"><div class="section well"><h1>Java/Android</h1></div></div>
+          <div role="tabpanel" class="tab-pane" id="CSS"><div class="section well"><h1>CSS/Design</h1></div></div>
+          <div role="tabpanel" class="tab-pane" id="CSHARP"><div class="section well"><h1>C#/.NET</h1></div></div>
+        </div>
+      </div> <!-- NOTE: end tracksTab div -->
+
+
+
+
+      <div class="section well" id="showForm">
+        <div class="row">
+          <div class="col-xs-12"> <!-- NOTE: starts out stacked in sm and xsm -->
+            <form id="studentDetailsForm">
+              <h2>Enter Student Information</h2>
+              <div class="form-group">
+                <input class="form-control" id="studentFirstName" type="text" placeholder="First Name" required>
+                <label for="studentFirstName"></label>
+              </div>
+              <div class="form-group">
+                <label for="studentLastName"></label>
+                <input class="form-control" id="studentLastName" type="text" placeholder="Last Name" required>
+              </div>
+              <div class="form-group">
+                <label for="studenetEmail"></label>
+                <input class="form-control" id="studentEmail" type="text" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <div class="check-box">
+                  <label>
+                    <input type="checkbox">PHP/Drupal
+                  </label>
+                  <label>
+                    <input type="checkbox">Ruby/Rails
+                  </label>
+                  <label>
+                    <input type="checkbox">Java/Android
+                  </label>
+                  <label>
+                    <input type="checkbox">CSS/Design
+                  </label>
+                  <label>
+                    <input type="checkbox">C#/.NET
+                  </label>
+                </div><!-- NOTE: end check-box div -->
+              </div><!-- NOTE: end form-group -->
+              <div class="btn-group">
+                <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+                <button class="btn btn-lg btn-danger" id="clearFormButton" type="reset" name="button">Reset</button>
+              </div>
+            </form>
+          </div><!-- NOTE: end col 1 div -->
+        </div><!-- NOTE: end row1 div -->
+      </div><!-- NOTE: end section 1 div -->
+    </div><!-- NOTE: end container div -->
+  </body>
+</html>
+
+
+
+<!--
+
+
+
+      <h2><p id="myFormButton"><strong>Take a Helper-Quiz!</strong></p></h2>
+        <div class="myBlankForm">
+          <div class="radio">
+            <label><input type="radio" name="optradio">A) Would you like to work for an Enterprise-level company?</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">B) Would you like to work with front-end?</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">C) Would you prefer to work with content-heavy websites with very little user interaction?</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">D) Would you prefer to write interactive web applications?</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">E) Would you prefer to work with a high-demand language, like Java?</label>
+          </div>
+
+        -->
